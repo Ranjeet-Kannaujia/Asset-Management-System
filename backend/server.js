@@ -9,7 +9,8 @@ const assetsRoute = require("./routes/assetsRoute/AssetsRoute");
 const userRoute = require("./routes/userRoute/userRoute");
 const cors = require("cors");
 const globalErrorHandler = require("./middleware/globalErrrorHandler");
-PORT = 9000;
+
+const PORT = process.env.PORT || 9000;
 const protected = require("./middleware/protected");
 const isLogin = require("./middleware/isLogin");
 const corsOptions = {
